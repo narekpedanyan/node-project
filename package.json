@@ -1,0 +1,36 @@
+{
+  "name": "node-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d build",
+    "start": "nodemon --exec babel-node app",
+    "start-test-project": "nodemon --exec babel-node test-project/app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/narekpedanyan/node-project.git"
+  },
+  "keywords": [],
+  "author": "Narek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/narekpedanyan/node-project/issues"
+  },
+  "homepage": "https://github.com/narekpedanyan/node-project#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-stage-2": "^7.0.0",
+    "babel-cli": "^7.0.0-0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "convert-csv-to-json": "0.0.13"
+  }
+}
